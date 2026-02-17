@@ -88,16 +88,20 @@ FSM을 중심으로 상태를 관리하여:
 ## ⭐ 주요 구현 코드
 
 - Player FSM 구조  
-  https://github.com/yeonnjin/EternalReturn_Cobalt/Server/Server/Game/Object/Player/State/States/Player_MovingState.cs
+  https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/State/PlayerStateMachine.cs
+  https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/State/IPlayerState.cs
+
+  - 클라이언트–서버 이동 동기화  
+  https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/State/States/Player_MovingState.cs
 
 - SkillHandler 기반 스킬 처리  
-  https://github.com/xxx/SkillHandler.cs
-
-- 클라이언트–서버 이동 동기화  
-  https://github.com/xxx/MovementSync.cs
+  https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/State/States/Player_SkillState.cs
+  https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/Skill/SkillHandler/SkillHandlerBase.cs
+  https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/Skill/Skills/Rozzi/Rozzi_Q.cs
 
 - PlayerController  
-  https://github.com/xxx/PlayerController.cs
+  https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Client/Assets/Scripts/Controllers/MyPlayerController.cs
+  https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Client/Assets/Scripts/Controllers/Player/PlayerInputController.cs
 
 ---
 
