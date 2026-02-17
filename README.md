@@ -87,12 +87,17 @@ FSM을 중심으로 상태를 관리하여:
 
 ## ⭐ 주요 구현 코드
 
-- PlayerStateMachine
-- SkillHandler
-- PlayerController
-- 이동 동기화 관련 로직
+- Player FSM 구조  
+  https://github.com/xxx/PlayerStateMachine.cs
 
-(자세한 구현은 Scripts 폴더 참고)
+- SkillHandler 기반 스킬 처리  
+  https://github.com/xxx/SkillHandler.cs
+
+- 클라이언트–서버 이동 동기화  
+  https://github.com/xxx/MovementSync.cs
+
+- PlayerController  
+  https://github.com/xxx/PlayerController.cs
 
 ---
 
