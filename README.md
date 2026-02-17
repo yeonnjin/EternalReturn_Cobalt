@@ -89,19 +89,19 @@ FSM을 중심으로 상태를 관리하여:
 
 - Player FSM 구조  
   - [ PlayerStateMachine ] https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/State/PlayerStateMachine.cs
-  https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/State/IPlayerState.cs
+  - [ IPlayerState ] https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/State/IPlayerState.cs
 
 - 클라이언트–서버 이동 동기화  
-  https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/State/States/Player_MovingState.cs
+  - [ Player_MovingState ] https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/State/States/Player_MovingState.cs
 
 - SkillHandler 기반 스킬 처리  
-  https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/State/States/Player_SkillState.cs
-  https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/Skill/SkillHandler/SkillHandlerBase.cs
-  https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/Skill/Skills/Rozzi/Rozzi_Q.cs
+  - [ Player_SkillState ] https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/State/States/Player_SkillState.cs
+  - [ SkillHandlerBase ] https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/Skill/SkillHandler/SkillHandlerBase.cs
+  - [ Character Skill 구현 ] https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/Skill/Skills/Rozzi/Rozzi_Q.cs
 
 - PlayerController  
-  https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Client/Assets/Scripts/Controllers/MyPlayerController.cs
-  https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Client/Assets/Scripts/Controllers/Player/PlayerInputController.cs
+  - [ MyPlayerController ] https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Client/Assets/Scripts/Controllers/MyPlayerController.cs
+  - [ PlayerInputController ] https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Client/Assets/Scripts/Controllers/Player/PlayerInputController.cs
 
 ---
 
