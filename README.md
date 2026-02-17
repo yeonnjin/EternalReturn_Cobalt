@@ -88,7 +88,7 @@ FSM을 중심으로 상태를 관리하여:
 ## ⭐ 주요 구현 코드
 
 - Player FSM 구조  
-  https://github.com/xxx/PlayerStateMachine.cs
+  Server/Server/Game/Object/Player/State/States/Player_MovingState.cs
 
 - SkillHandler 기반 스킬 처리  
   https://github.com/xxx/SkillHandler.cs
