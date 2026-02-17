@@ -9,14 +9,12 @@ using System.Threading;
 
 public class Player_MovingState : IPlayerState, IReceivesMoveCommand
 {
-    // ==== 클라 주도 이동에 맞춘 최소 상태 ====
     private bool _isTargetOn = false;
     private int _targetId;
-    private Vector3 _targetPos; // 지형 목적지 or 최근 타겟 위치(참조용)
+    private Vector3 _targetPos; 
 
-    // 사거리/도착 판정 파라미터 (필요시 테이블로 이관)
-    private const float STOP_RANGE = 0.1f; // 지형 이동 도착 허용 반경
-    private const float DEST_CHANGE_EPS = 0.05f; // 목적지 미세변경 무시
+    private const float STOP_RANGE = 0.1f;         // 지형 이동 도착 허용 반경
+    private const float DEST_CHANGE_EPS = 0.05f;   // 목적지 미세변경 무시
 
     private long _nextPathTick;
     private long _findTick = 10L;
@@ -111,7 +109,7 @@ public class Player_MovingState : IPlayerState, IReceivesMoveCommand
     {
     }
 
-    // C_Move가 연속으로 들어올 때 "상태 재진입 없이" 목표지/타겟만 갱신
+    // C_Move가 연속으로 들어올 때 상태 재진입 없이 목표지/타겟만 갱신
     public void OnMoveCommand(Player player, C_Move packet)
     {
         bool newIsTargetOn = packet.IsTargetOn;
