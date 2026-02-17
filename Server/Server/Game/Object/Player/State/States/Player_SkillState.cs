@@ -11,8 +11,6 @@ public class Player_SkillState : IPlayerState, IReceivesMoveCommand, IReceivesSt
     public readonly SkillContext Ctx;
 
     private long _tStartTick, _tEndTick;
-    //private long _tHitTick;
-    //private bool _didHit;
     private bool _forceEnd;
 
     private Vector3? _currentDestination = null;
@@ -34,9 +32,6 @@ public class Player_SkillState : IPlayerState, IReceivesMoveCommand, IReceivesSt
         float durSec = _handler.GetDuration();
         _tEndTick = unchecked(_tStartTick + (int)MathF.Round(durSec * 1000f));
 
-        //float hitSec;
-        //_tHitTick = unchecked(_tStartTick + (int)MathF.Round(hitSec * 1000f));
-
         _handler.OnEnter(player, Ctx);
     }
 
@@ -47,12 +42,6 @@ public class Player_SkillState : IPlayerState, IReceivesMoveCommand, IReceivesSt
             ChangeState(player);
             return;
         }
-
-        //if (!_didHit && TimeUtil.Instance.IsPastOrNow(_tHitTick))
-        //{
-        //    _handler.OnHit(player, Ctx);
-        //    _didHit = true;
-        //}
 
         if(HandleMovementCompletion(player))
             OnStopCommand(player, null);
@@ -88,7 +77,7 @@ public class Player_SkillState : IPlayerState, IReceivesMoveCommand, IReceivesSt
         }
     }
 
-    // (스킬 중에) 이동 시 목적지까지 도착했는가?
+    // 스킬 중에 이동 시 목적지까지 도착했는지
     private bool HandleMovementCompletion(Player player)
     {
         if (_currentDestination.HasValue)
@@ -107,12 +96,7 @@ public class Player_SkillState : IPlayerState, IReceivesMoveCommand, IReceivesSt
     {
         if (_handler.CanMoveDuringCast)
         {
-            // (A) 이 스킬은 시전 중 이동 허용
-            //player.SendMoveSyncPacket(
-            //    move.TargetPosition,
-            //    _handler.MoveSpeedMultiplier
-            //);
-
+            // (A) 시전 중 이동 허용
             _currentDestination = move.TargetPosition.ToVector();
             _handler.OnMove(player, move);
         }
@@ -127,10 +111,7 @@ public class Player_SkillState : IPlayerState, IReceivesMoveCommand, IReceivesSt
             else
             {
                 // (B) 시전 중 이동 불가 스킬
-                // 지금은 못 움직이니까 예약
-                //player.SendStopPacket(StopReason.StopMoveOnly);
-
-                // 2) 나중에 스킬이 끝나면 바로 이동시키기 위해 의도를 큐에 넣음
+                // 나중에 스킬이 끝나면 바로 이동시키기 위해 의도를 큐에 넣음
                 C_SetMoveTarget deferred = new C_SetMoveTarget()
                 {
                     IsGround = !move.IsTargetOn,
