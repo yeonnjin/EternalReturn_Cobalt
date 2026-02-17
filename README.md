@@ -89,7 +89,9 @@ FSM을 중심으로 상태를 관리하여:
 
 - Player FSM 구조
   - [ PlayerStateMachine ] https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/State/PlayerStateMachine.cs
-  - [ IPlayerState ] https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/State/IPlayerState.cs                          
+  - [ IPlayerState ] 
+  
+  https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/State/IPlayerState.cs                          
   - [ Player_DeadState ] https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/State/States/Player_DeadState.cs
 
 - 클라이언트–서버 이동 동기화  
