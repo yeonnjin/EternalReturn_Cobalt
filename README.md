@@ -88,7 +88,7 @@ FSM을 중심으로 상태를 관리하여:
 ## ⭐ 주요 구현 코드
 
 - Player FSM 구조  
-  https://github.com/yeonnjin/EternalReturn_Cobalt/blob/36048db0431c4c904880e4a8386d48020dae0bb2/Server/Server/Game/Object/Player/State/States/Player_MovingState.cs
+  https://github.com/yeonnjin/EternalReturn_Cobalt/Server/Server/Game/Object/Player/State/States/Player_MovingState.cs
 
 - SkillHandler 기반 스킬 처리  
   https://github.com/xxx/SkillHandler.cs
