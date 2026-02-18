@@ -1,7 +1,7 @@
-# Unity MOBA 팀 프로젝트
+# EternalReturn Cobalt - Unity 5인 팀 프로젝트
 
 본 레포지토리는 팀 프로젝트 원본 레포지토리를 Fork한 저장소입니다.  
-> 저는 서버 권한 구조에서 클라이언트 입력, FSM 상태 처리, 스킬 로직, 이동 동기화가 어떻게 연결되는지를 중심으로 구현했습니다.
+서버 권한 구조에서 클라이언트 입력, FSM 상태 처리, 스킬 로직, 이동 동기화가 어떻게 연결되는지를 중심으로 구현했습니다.
 
 ---
 
@@ -96,7 +96,7 @@ FSM을 중심으로 상태를 관리하여:
  [ Player_MovingState ]
 - 이동 중 타겟 판별, 공격 전환, 서버 확정 위치 반영 등
 - 이동 관련 상태 처리 전반을 담당
-https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/State/States/Player_MovingState.cs
+- https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/State/States/Player_MovingState.cs
 
 
 ▶ SkillHandler 기반 스킬 처리 구조
