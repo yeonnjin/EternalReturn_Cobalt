@@ -87,7 +87,7 @@ FSM을 중심으로 상태를 관리하여:
 
 ## ⭐ 주요 구현 코드
 
-### Player FSM 구조
+### ▶ Player FSM 구조
 
  [ PlayerStateMachine ]
 - 플레이어 상태(FSM) 진입/실행/종료 흐름을 관리하는 메인 클래스
@@ -99,9 +99,9 @@ FSM을 중심으로 상태를 관리하여:
 - https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/State/States/Player_MovingState.cs
 
 
-### SkillHandler 기반 스킬 처리 구조
+### ▶ SkillHandler 기반 스킬 처리 구조
 
- #### [ Player_SkillState ]
+ [ Player_SkillState ]
 - 스킬 시전 중 이동 허용, 입력 큐 처리, 스킬 종료 조건 관리 등
 - 스킬 상태 전반을 담당하는 FSM 상태 클래스
 - https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/State/States/Player_SkillState.cs
@@ -116,7 +116,7 @@ FSM을 중심으로 상태를 관리하여:
 - https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/Skill/Skills/Rozzi/Rozzi_Q.cs
 
 
-### Client Controller (클라이언트 입력 및 표현)
+### ▶ Client Controller (클라이언트 입력 및 표현)
 
  [ MyPlayerController ]
 - 클라이언트 입력 처리 및 서버 상태 반영을 담당하는 컨트롤러
