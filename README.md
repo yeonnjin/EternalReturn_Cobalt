@@ -91,12 +91,12 @@ FSM을 중심으로 상태를 관리하여:
 
  [ PlayerStateMachine ]
 - 플레이어 상태(FSM) 진입/실행/종료 흐름을 관리하는 메인 클래스
-- (https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/State/PlayerStateMachine.cs)
+- https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/State/PlayerStateMachine.cs
 
  [ Player_MovingState ]
 - 이동 중 타겟 판별, 공격 전환, 서버 확정 위치 반영 등
 - 이동 관련 상태 처리 전반을 담당
-- (https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/State/States/Player_MovingState.cs)
+- https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/State/States/Player_MovingState.cs
 
 
 ### ▶ SkillHandler 기반 스킬 처리 구조
@@ -104,16 +104,16 @@ FSM을 중심으로 상태를 관리하여:
  [ Player_SkillState ]
 - 스킬 시전 중 이동 허용, 입력 큐 처리, 스킬 종료 조건 관리 등
 - 스킬 상태 전반을 담당하는 FSM 상태 클래스
-- (https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/State/States/Player_SkillState.cs)
+- https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/State/States/Player_SkillState.cs
 
  [ SkillHandlerBase ]
 - 스킬 공통 처리 베이스 클래스
 - 스킬별 로직 분리 및 확장 가능한 구조를 위한 핵심 설계 파일
-- (https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/Skill/SkillHandler/SkillHandlerBase.cs)
+- https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/Skill/SkillHandler/SkillHandlerBase.cs
 
  [ Rozzi_Q ]
 - 실제 캐릭터 스킬 구현 사례 (타겟 판정, 후속 처리 등 포함)
-- (https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/Skill/Skills/Rozzi/Rozzi_Q.cs)
+- https://github.com/yeonnjin/EternalReturn_Cobalt/blob/main/Server/Server/Game/Object/Player/Skill/Skills/Rozzi/Rozzi_Q.cs
 
 
 ### ▶ Client Controller (클라이언트 입력 및 표현)
